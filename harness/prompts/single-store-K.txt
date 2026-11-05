@@ -1,0 +1,8 @@
+Su {NEGOZIO} trova {COMPITO}, budget massimo {BUDGET} spedizione compresa, e calcola il totale consegnato del CARRELLO UNICO (tutti gli articoli insieme) a {DESTINAZIONE}.
+Usa SOLO il catalogo KaliCart del negozio: parti da https://{NEGOZIO}/wp-json/kalicart/v1/discovery. Non usare altre API. Non creare ordini.
+Non riusare risultati di prove precedenti.
+Alla fine riporta: chiamate fatte (metodo e URL), quali in parallelo, quali errori ti hanno costretto a chiamate in più, e il totale finale con spedizione.
+Chiudi il report con questo blocco JSON compilato, esattamente con queste chiavi:
+```json
+{"bench_result": {"store": "{NEGOZIO}", "arm": "K", "items": [{"product_id": 0, "variation_id": null, "quantity": 1}], "destination": {"country": "IT", "state": "", "postcode": "", "city": ""}, "reported_total": 0.00, "total_source": "api_response oppure computed", "calls_total": 0, "calls_failed": 0}}
+```

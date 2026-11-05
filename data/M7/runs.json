@@ -1,0 +1,4475 @@
+[
+ {
+  "run": "C1-K-1",
+  "task": "C1",
+  "arm": "K",
+  "stores": [
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 12,
+  "calls_failed": 0,
+  "tokens_in": 455920,
+  "tokens_out": 5813,
+  "turns": 9,
+  "seconds": 54,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/meta",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=30&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=30&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&category={category}&max_price=60&in_stock=true&per_page=50&orderby=price&order=ASC&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&max_price={id}&in_stock=true&per_page=50&orderby=price&order=ASC&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/products?category={category}&orderby=price&order=ASC&per_page=25&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/products?category={category}&max_price={id}&orderby=price&order=ASC&per_page=30&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   },
+   {
+    "turn": 6,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   },
+   {
+    "turn": 7,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C1-K-2",
+  "task": "C1",
+  "arm": "K",
+  "stores": [
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 9,
+  "calls_failed": 0,
+  "tokens_in": 258137,
+  "tokens_out": 4099,
+  "turns": 6,
+  "seconds": 37,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/meta",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=50&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=50&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/products?category={category}&max_price={id}&orderby=price&order=asc&per_page={id}&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/products?category={category}&max_price={id}&orderby=price&order=asc&per_page={id}&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C1-K-3",
+  "task": "C1",
+  "arm": "K",
+  "stores": [
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 9,
+  "calls_failed": 0,
+  "tokens_in": 246909,
+  "tokens_out": 4415,
+  "turns": 6,
+  "seconds": 39,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/meta",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=30&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=50&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&category={category}&per_page={id}&orderby=price&order=ASC&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&category={category}&per_page={id}&orderby=price&order=ASC&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C1-K-4",
+  "task": "C1",
+  "arm": "K",
+  "stores": [
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 11,
+  "calls_failed": 0,
+  "tokens_in": 311694,
+  "tokens_out": 4566,
+  "turns": 7,
+  "seconds": 42,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/meta",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page={id}&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page={id}&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&category={category}&max_price={id}&per_page={id}&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&category={category}&max_price={id}&per_page={id}&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&category={category}&max_price={id}&per_page={id}&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C1-K-5",
+  "task": "C1",
+  "arm": "K",
+  "stores": [
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 11,
+  "calls_failed": 0,
+  "tokens_in": 346005,
+  "tokens_out": 5350,
+  "turns": 7,
+  "seconds": 47,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=50&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page={id}&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/meta",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&max_price={id}&orderby=price&order=ASC&per_page={id}&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&orderby=price&order=ASC&per_page=30&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/products?category={category}&max_price={id}&orderby=price&order=ASC&per_page=50&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/products?category={category}&orderby=price&order=ASC&per_page=20&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C1-S-1",
+  "task": "C1",
+  "arm": "S",
+  "stores": [
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 13,
+  "calls_failed": 1,
+  "tokens_in": 494335,
+  "tokens_out": 9289,
+  "turns": 9,
+  "seconds": 96,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page={id}",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page={id}",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page={id}&orderby=price&order=asc&_fields=id%2Cname%2Ctype%2Cprices%2Cstock_availability%2Cis_in_stock%2Clow_stock_remaining%2Cvariations%2Cattributes",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page={id}&orderby=price&order=asc&_fields=id%2Cname%2Ctype%2Cprices%2Cstock_availability%2Cis_in_stock%2Cvariations%2Cattributes",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&per_page={id}&orderby=price&order=asc&_fields=id%2Cname%2Ctype%2Cprices",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?parent={id}&per_page={id}&_fields=id%2Csku%2Cattributes%2Cprices%2Cis_in_stock",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}/variations?per_page={id}&_fields=id%2Cattributes%2Cprices",
+    "status": 404
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cattributes%2Cvariations%2Cprices%2Cis_in_stock",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 6,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Cprices%2Cis_in_stock%2Cstock_availability%2Cis_purchasable",
+    "status": 200
+   },
+   {
+    "turn": 6,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   },
+   {
+    "turn": 7,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   }
+  ]
+ },
+ {
+  "run": "C1-S-2",
+  "task": "C1",
+  "arm": "S",
+  "stores": [
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 16,
+  "calls_failed": 1,
+  "tokens_in": 969057,
+  "tokens_out": 9919,
+  "turns": 12,
+  "seconds": 80,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=30",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=30",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&orderby=price&order=asc&per_page=3",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?attribute=pa_dimensioni&term=160x190-cm&orderby=price&order=asc&per_page=2",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?attributes%5B0%5D%5Battribute%5D=pa_dimensioni&attributes%5B0%5D%5Bterm_id%5D=91&orderby=price&order=asc&per_page=1&page=1",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&attributes%5B0%5D%5Battribute%5D=pa_dimensioni&attributes%5B0%5D%5Bterm_id%5D=91&orderby=price&order=asc&per_page=1&page=1",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&orderby=price&order=asc&per_page=1&page=1",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&stock_status=instock&orderby=price&order=asc&per_page=1&page=1",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 401
+   },
+   {
+    "turn": 6,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 7,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&stock_status=instock&orderby=price&order=asc&per_page=1&page=2",
+    "status": 200
+   },
+   {
+    "turn": 7,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&stock_status=instock&orderby=price&order=asc&per_page=1&page=3",
+    "status": 200
+   },
+   {
+    "turn": 8,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 9,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   },
+   {
+    "turn": 10,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart?_fields=totals%2Cshipping_rates%2Cshipping_address%2Citems_count%2Cneeds_shipping",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C1-S-3",
+  "task": "C1",
+  "arm": "S",
+  "stores": [
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 24,
+  "calls_failed": 2,
+  "tokens_in": 850942,
+  "tokens_out": 10509,
+  "turns": 15,
+  "seconds": 100,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=30",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=30&_fields=id%2Cname%2Ctype%2Cprices%2Cis_in_stock%2Cvariations",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=30&page=2&_fields=id%2Cname%2Ctype%2Cprices%2Cis_in_stock%2Cvariations",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page={id}&_fields=id%2Cname%2Ctype%2Cprices",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/categories?per_page={id}&_fields=id%2Cname%2Cslug%2Ccount",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&page=2&per_page={id}&_fields=id%2Cname%2Ctype%2Cprices",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&per_page=50&_fields=id%2Cname%2Ctype%2Cprices",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&orderby=price&order=asc&per_page=30&_fields=id%2Cname%2Ctype%2Cprices",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?type=variation&parent={id}&per_page={id}&_fields=id%2Cname%2Cprices%2Cattributes%2Cis_in_stock",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&orderby=price&order=asc&per_page=40&_fields=id%2Cname%2Ctype%2Cprices",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Cvariations",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?type=variation&parent={id}&per_page={id}&_fields=id%2Csku%2Cattributes",
+    "status": 200
+   },
+   {
+    "turn": 6,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 7,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 8,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 400
+   },
+   {
+    "turn": 9,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 400
+   },
+   {
+    "turn": 10,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Cprices%2Clow_stock_remaining%2Cis_in_stock%2Cstock_availability",
+    "status": 200
+   },
+   {
+    "turn": 10,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Cprices%2Clow_stock_remaining%2Cis_in_stock%2Cstock_availability",
+    "status": 200
+   },
+   {
+    "turn": 10,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Cprices%2Clow_stock_remaining%2Cis_in_stock%2Cstock_availability",
+    "status": 200
+   },
+   {
+    "turn": 10,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Cprices%2Clow_stock_remaining%2Cis_in_stock%2Cstock_availability",
+    "status": 200
+   },
+   {
+    "turn": 11,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 12,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   },
+   {
+    "turn": 13,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart?_fields=totals%2Cshipping_rates%2Chas_calculated_shipping%2Citems_count%2Cshipping_address",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C1-S-4",
+  "task": "C1",
+  "arm": "S",
+  "stores": [
+   "store-b"
+  ],
+  "outcome": "fail_over_budget",
+  "detail": "",
+  "calls_total": 40,
+  "calls_failed": 6,
+  "tokens_in": 1848882,
+  "tokens_out": 36718,
+  "turns": 22,
+  "seconds": 274,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?per_page={id}",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=50&_fields=id%2Cname%2Cslug%2Ctype%2Cprices%2Cpermalink",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=50&_fields=id%2Cname%2Cslug%2Ctype%2Cprices%2Cpermalink",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/categories?per_page={id}",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=50&_fields=id%2Cname%2Ctype%2Cslug%2Cprices",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page={id}&_fields=id%2Cname%2Ctype%2Cslug%2Cprices",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}/variations?per_page={id}&_fields=id%2Cattributes%2Cprices",
+    "status": 404
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}/variations?per_page={id}&_fields=id%2Cattributes%2Cprices",
+    "status": 404
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}/variations?per_page={id}&_fields=id%2Cattributes%2Cprices",
+    "status": 404
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cvariations%2Cattributes",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}/variations",
+    "status": 404
+   },
+   {
+    "turn": 5,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cprices%2Cvariation%2Cattributes",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cvariations%2Cattributes%2Cprices",
+    "status": 200
+   },
+   {
+    "turn": 6,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cprices%2Cvariation",
+    "status": 200
+   },
+   {
+    "turn": 6,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cprices%2Cvariation",
+    "status": 200
+   },
+   {
+    "turn": 6,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cprices%2Cvariation",
+    "status": 200
+   },
+   {
+    "turn": 7,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&orderby=price&order=asc&per_page={id}&_fields=id%2Cname%2Ctype%2Cprices",
+    "status": 200
+   },
+   {
+    "turn": 8,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cvariations",
+    "status": 200
+   },
+   {
+    "turn": 8,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cvariations",
+    "status": 200
+   },
+   {
+    "turn": 8,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cvariations",
+    "status": 200
+   },
+   {
+    "turn": 9,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cprices%2Cvariation",
+    "status": 200
+   },
+   {
+    "turn": 9,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cprices%2Cvariation",
+    "status": 200
+   },
+   {
+    "turn": 9,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cprices%2Cvariation",
+    "status": 200
+   },
+   {
+    "turn": 10,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 11,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 12,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   },
+   {
+    "turn": 13,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&orderby=price&order=asc&per_page={id}&_fields=id%2Cname%2Ctype%2Cprices",
+    "status": 200
+   },
+   {
+    "turn": 14,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/remove-item",
+    "status": 200
+   },
+   {
+    "turn": 15,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 400
+   },
+   {
+    "turn": 16,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Cprices%2Cis_in_stock%2Cstock_availability%2Clow_stock_remaining",
+    "status": 200
+   },
+   {
+    "turn": 16,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Cprices%2Cis_in_stock%2Cstock_availability%2Clow_stock_remaining",
+    "status": 200
+   },
+   {
+    "turn": 16,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Cprices%2Cis_in_stock%2Cstock_availability%2Clow_stock_remaining",
+    "status": 200
+   },
+   {
+    "turn": 16,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Cprices%2Cis_in_stock%2Cstock_availability%2Clow_stock_remaining",
+    "status": 200
+   },
+   {
+    "turn": 16,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Cprices%2Cis_in_stock%2Cstock_availability%2Clow_stock_remaining",
+    "status": 200
+   },
+   {
+    "turn": 16,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Cprices%2Cis_in_stock%2Cstock_availability%2Clow_stock_remaining",
+    "status": 200
+   },
+   {
+    "turn": 17,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 400
+   },
+   {
+    "turn": 18,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 19,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 20,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart?_fields=totals%2Citems_count%2Cshipping_rates%2Cerrors",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C1-S-5",
+  "task": "C1",
+  "arm": "S",
+  "stores": [
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 14,
+  "calls_failed": 1,
+  "tokens_in": 843840,
+  "tokens_out": 14567,
+  "turns": 11,
+  "seconds": 107,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=30",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=30",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&orderby=price&order=asc&per_page=3",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&attributes%5B0%5D%5Battribute%5D=pa_dimensioni&attributes%5B0%5D%5Bterm_id%5D=91&orderby=price&order=asc&per_page=3",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}/variations?per_page=20",
+    "status": 404
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&orderby=price&order=asc&per_page=5",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 5,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&orderby=price&order=asc&per_page=2&page=2",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&orderby=price&order=asc&per_page=2&page=3",
+    "status": 200
+   },
+   {
+    "turn": 6,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 7,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   },
+   {
+    "turn": 8,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart?_fields=totals%2Cshipping_rates%2Citems_count%2Chas_calculated_shipping",
+    "status": 200
+   },
+   {
+    "turn": 9,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart?_fields=totals%2Cshipping_rates%2Citems_count%2Chas_calculated_shipping%2Cshipping_address",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C2-K-1",
+  "task": "C2",
+  "arm": "K",
+  "stores": [
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 8,
+  "calls_failed": 0,
+  "tokens_in": 148545,
+  "tokens_out": 5598,
+  "turns": 5,
+  "seconds": 44,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=50&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/meta",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&category={category}&per_page={id}&orderby=price&order=ASC&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page={id}&orderby=price&order=ASC&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C2-K-2",
+  "task": "C2",
+  "arm": "K",
+  "stores": [
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 9,
+  "calls_failed": 0,
+  "tokens_in": 201734,
+  "tokens_out": 5228,
+  "turns": 6,
+  "seconds": 41,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=30&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/meta",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=40&orderby=price&order=ASC&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=40&orderby=price&order=ASC&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C2-K-3",
+  "task": "C2",
+  "arm": "K",
+  "stores": [
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 8,
+  "calls_failed": 0,
+  "tokens_in": 161825,
+  "tokens_out": 3821,
+  "turns": 5,
+  "seconds": 32,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/meta",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/categories",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page={id}&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&category={category}&in_stock=true&per_page={id}&orderby=price&order=ASC&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C2-K-4",
+  "task": "C2",
+  "arm": "K",
+  "stores": [
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 6,
+  "calls_failed": 0,
+  "tokens_in": 122646,
+  "tokens_out": 3637,
+  "turns": 5,
+  "seconds": 28,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/meta",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=50&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&category={category}&max_price=85&in_stock=true&per_page={id}&orderby=price&order=ASC&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&category={category}&max_price=85&in_stock=true&per_page={id}&orderby=price&order=ASC&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C2-K-5",
+  "task": "C2",
+  "arm": "K",
+  "stores": [
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 10,
+  "calls_failed": 0,
+  "tokens_in": 222688,
+  "tokens_out": 5267,
+  "turns": 7,
+  "seconds": 43,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=50&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/meta",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&category={category}&max_price=85&in_stock=true&orderby=price&order=asc&per_page=50&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&category={category}&in_stock=true&orderby=price&order=asc&per_page=50&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&max_price=36&in_stock=true&orderby=price&order=asc&per_page=20&fields=summary",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C2-S-1",
+  "task": "C2",
+  "arm": "S",
+  "stores": [
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 8,
+  "calls_failed": 0,
+  "tokens_in": 310907,
+  "tokens_out": 6135,
+  "turns": 8,
+  "seconds": 48,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page={id}",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=20&page=1",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&per_page={id}&orderby=price&order=asc&_fields=id%2Cname%2Ctype%2Cprices%2Cis_in_stock%2Clow_stock_remaining",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 4,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/update-customer?_fields=totals%2Cshipping_rates%2Citems_count%2Chas_calculated_shipping%2Cshipping_address",
+    "status": 200
+   },
+   {
+    "turn": 6,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart?_fields=totals%2Citems_count%2Cshipping_address%2Cneeds_shipping%2Chas_calculated_shipping",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C2-S-2",
+  "task": "C2",
+  "arm": "S",
+  "stores": [
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 11,
+  "calls_failed": 0,
+  "tokens_in": 519029,
+  "tokens_out": 7910,
+  "turns": 8,
+  "seconds": 60,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page={id}",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page={id}",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&orderby=price&order=asc&per_page=3&page=1",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&orderby=price&order=asc&per_page=4&page=2",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&orderby=price&order=asc&per_page=1&page=3",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&orderby=price&order=asc&per_page=1&page=4",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 4,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   },
+   {
+    "turn": 6,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart?_fields=totals%2Cshipping_rates%2Cshipping_address%2Citems_count%2Chas_calculated_shipping%2Cerrors",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C2-S-3",
+  "task": "C2",
+  "arm": "S",
+  "stores": [
+   "store-b"
+  ],
+  "outcome": "deduced",
+  "detail": "",
+  "calls_total": 12,
+  "calls_failed": 0,
+  "tokens_in": 719465,
+  "tokens_out": 22509,
+  "turns": 11,
+  "seconds": 153,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page={id}",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&orderby=price&order=asc&per_page=1&page=1",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&orderby=price&order=asc&per_page=1&page=2",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&orderby=price&order=asc&per_page=1&page=3",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 4,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   },
+   {
+    "turn": 6,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/remove-item",
+    "status": 200
+   },
+   {
+    "turn": 7,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/update-item",
+    "status": 200
+   },
+   {
+    "turn": 8,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/update-item",
+    "status": 200
+   },
+   {
+    "turn": 9,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   }
+  ]
+ },
+ {
+  "run": "C2-S-4",
+  "task": "C2",
+  "arm": "S",
+  "stores": [
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 11,
+  "calls_failed": 0,
+  "tokens_in": 523233,
+  "tokens_out": 8663,
+  "turns": 9,
+  "seconds": 65,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=50",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?per_page=5",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&orderby=price&order=asc&per_page=1&page=1",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&max_price={id}&per_page=5",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&per_page={id}&_fields=id%2Cname%2Cprices%2Ctype%2Cis_in_stock",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?include=69449%2C124289%2C124292%2C91444&_fields=id%2Cname%2Ctype%2Cprices%2Cis_in_stock%2Cshort_description",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 6,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/update-customer?_fields=totals%2Citems_count%2Cshipping_address%2Cshipping_rates",
+    "status": 200
+   },
+   {
+    "turn": 7,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart?_fields=totals%2Citems_count%2Cshipping_address%2Cneeds_shipping",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C2-S-5",
+  "task": "C2",
+  "arm": "S",
+  "stores": [
+   "store-b"
+  ],
+  "outcome": "deduced",
+  "detail": "",
+  "calls_total": 20,
+  "calls_failed": 5,
+  "tokens_in": 1322209,
+  "tokens_out": 35548,
+  "turns": 16,
+  "seconds": 241,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=20",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?per_page=5",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&orderby=price&order=asc&per_page=2&page=1",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&orderby=price&order=asc&per_page=2&page=2",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-items",
+    "status": 404
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 6,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 7,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 8,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/",
+    "status": 200
+   },
+   {
+    "turn": 9,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 10,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/batch",
+    "status": 400
+   },
+   {
+    "turn": 11,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/batch",
+    "status": 400
+   },
+   {
+    "turn": 11,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/batch",
+    "status": 400
+   },
+   {
+    "turn": 12,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/batch",
+    "status": 207
+   },
+   {
+    "turn": 12,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/batch",
+    "status": 400
+   },
+   {
+    "turn": 13,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/batch",
+    "status": 207
+   },
+   {
+    "turn": 14,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/batch",
+    "status": 207
+   },
+   {
+    "turn": 14,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/batch",
+    "status": 207
+   }
+  ]
+ },
+ {
+  "run": "C3-K-1",
+  "task": "C3",
+  "arm": "K",
+  "stores": [
+   "store-a"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 9,
+  "calls_failed": 0,
+  "tokens_in": 86940,
+  "tokens_out": 3754,
+  "turns": 5,
+  "seconds": 35,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&color=black&per_page=20&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&gender=female&color=black&per_page=20&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/meta",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C3-K-2",
+  "task": "C3",
+  "arm": "K",
+  "stores": [
+   "store-a"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 13,
+  "calls_failed": 0,
+  "tokens_in": 145061,
+  "tokens_out": 5255,
+  "turns": 6,
+  "seconds": 44,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/meta",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&color=black&per_page=20&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&gender=female&color=black&per_page=20&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/products?category={category}&gender=female&color=black&per_page=50&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&gender=female&color=black&per_page=20&page=2&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C3-K-3",
+  "task": "C3",
+  "arm": "K",
+  "stores": [
+   "store-a"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 8,
+  "calls_failed": 0,
+  "tokens_in": 115045,
+  "tokens_out": 4007,
+  "turns": 6,
+  "seconds": 34,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/meta",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=20&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&color=black&category={category}&per_page=30&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C3-K-4",
+  "task": "C3",
+  "arm": "K",
+  "stores": [
+   "store-a"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 10,
+  "calls_failed": 0,
+  "tokens_in": 216474,
+  "tokens_out": 5224,
+  "turns": 7,
+  "seconds": 40,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/meta",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=50&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=50&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&category={category}&color=black&gender=female&max_price=68&per_page={id}&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&color=black&gender=female&max_price=68&per_page={id}&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&category={category}&color=black&per_page={id}&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C3-K-5",
+  "task": "C3",
+  "arm": "K",
+  "stores": [
+   "store-a"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 11,
+  "calls_failed": 0,
+  "tokens_in": 151855,
+  "tokens_out": 4911,
+  "turns": 6,
+  "seconds": 36,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/meta",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=20&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=20&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&category={category}&color=black&gender=female&per_page=50&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C3-S-1",
+  "task": "C3",
+  "arm": "S",
+  "stores": [
+   "store-a"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 10,
+  "calls_failed": 1,
+  "tokens_in": 236505,
+  "tokens_out": 4581,
+  "turns": 8,
+  "seconds": 37,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=30",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=30",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products/{id}",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?category={category}&search={query}&per_page=30",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 401
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products/{id}",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 4,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   },
+   {
+    "turn": 6,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C3-S-2",
+  "task": "C3",
+  "arm": "S",
+  "stores": [
+   "store-a"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 14,
+  "calls_failed": 1,
+  "tokens_in": 894191,
+  "tokens_out": 7457,
+  "turns": 12,
+  "seconds": 62,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=30",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=30",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?type=variation&parent={id}&per_page=30",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?category={category}&attribute=pa_taglia&attribute_term=3&per_page=30",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?category={category}&attributes%5B0%5D%5Battribute%5D=pa_taglia&attributes%5B0%5D%5Bterm_id%5D={id}&per_page=50",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=50",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&attributes%5B0%5D%5Battribute%5D=pa_taglia&attributes%5B0%5D%5Bterm_id%5D={id}&orderby=price&order=asc&per_page=30",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&attributes%5B0%5D%5Battribute%5D=pa_taglia&attributes%5B0%5D%5Bterm_id%5D={id}&stock_status=instock&orderby=price&order=asc&per_page=30&_fields=id%2Cname%2Cpermalink%2Cprices%2Cvariations%2Cis_in_stock%2Cis_purchasable",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 401
+   },
+   {
+    "turn": 6,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 7,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 8,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 9,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   },
+   {
+    "turn": 10,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart?_fields=items_count%2Ctotals%2Cshipping_address%2Cshipping_rates",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C3-S-3",
+  "task": "C3",
+  "arm": "S",
+  "stores": [
+   "store-a"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 11,
+  "calls_failed": 0,
+  "tokens_in": 453610,
+  "tokens_out": 5856,
+  "turns": 9,
+  "seconds": 53,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=20",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products/{id}",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?category={category}&per_page=30&orderby=price&order=asc&attribute=pa_taglia&terms=3",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=15&orderby=price&order=asc",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products/{id}",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 6,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   },
+   {
+    "turn": 7,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C3-S-4",
+  "task": "C3",
+  "arm": "S",
+  "stores": [
+   "store-a"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 9,
+  "calls_failed": 0,
+  "tokens_in": 299476,
+  "tokens_out": 4641,
+  "turns": 8,
+  "seconds": 40,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=20",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=50",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?type=variation&parent={id}&per_page=50",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=50&orderby=price&order=asc",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 4,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   },
+   {
+    "turn": 6,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C3-S-5",
+  "task": "C3",
+  "arm": "S",
+  "stores": [
+   "store-a"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 13,
+  "calls_failed": 2,
+  "tokens_in": 607260,
+  "tokens_out": 6528,
+  "turns": 10,
+  "seconds": 55,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=20",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products/{id}/variations?per_page=30",
+    "status": 404
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?category={category}&per_page=30&orderby=price&order=asc",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?category={category}&search={query}&per_page=8&orderby=price&order=asc",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?type=variation&parent={id}&per_page=20",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 401
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?category={category}&search={query}&per_page=5&page=2&orderby=price&order=asc",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 6,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 7,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   },
+   {
+    "turn": 8,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C4-K-1",
+  "task": "C4",
+  "arm": "K",
+  "stores": [
+   "store-a",
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 11,
+  "calls_failed": 1,
+  "tokens_in": 233706,
+  "tokens_out": 4421,
+  "turns": 7,
+  "seconds": 39,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&gender=female&color=nero&per_page=20&fields=summary",
+    "status": 400
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=20&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&gender=female&color=black&per_page=20&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=20&orderby=price&order=asc&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&gender=female&color=black&per_page=20&page=2&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C4-K-2",
+  "task": "C4",
+  "arm": "K",
+  "stores": [
+   "store-a",
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 12,
+  "calls_failed": 1,
+  "tokens_in": 235877,
+  "tokens_out": 5010,
+  "turns": 7,
+  "seconds": 41,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&gender=female&color=nero&per_page=20&fields=summary",
+    "status": 400
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=20&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&gender=female&color=black&per_page=20&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&orderby=price&order=ASC&per_page=20&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&gender=female&color=black&per_page=20&page=2&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C4-K-3",
+  "task": "C4",
+  "arm": "K",
+  "stores": [
+   "store-a",
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 10,
+  "calls_failed": 1,
+  "tokens_in": 207147,
+  "tokens_out": 4393,
+  "turns": 7,
+  "seconds": 34,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&gender=female&color=nero&per_page=20&fields=summary",
+    "status": 400
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=20&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&gender=female&color=black&per_page=20&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&gender=female&color=black&per_page=20&page=2&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C4-K-4",
+  "task": "C4",
+  "arm": "K",
+  "stores": [
+   "store-a",
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 9,
+  "calls_failed": 0,
+  "tokens_in": 180313,
+  "tokens_out": 5180,
+  "turns": 6,
+  "seconds": 36,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&gender=female&color=black&per_page=20&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&per_page=20&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&gender=female&color=black&per_page=20&page=2&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C4-K-5",
+  "task": "C4",
+  "arm": "K",
+  "stores": [
+   "store-a",
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 10,
+  "calls_failed": 1,
+  "tokens_in": 213867,
+  "tokens_out": 4391,
+  "turns": 7,
+  "seconds": 37,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/discovery",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&gender=female&color=nero&fields=summary&per_page=20",
+    "status": 400
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&fields=summary&per_page=20",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&gender=female&color=black&fields=summary&per_page=20",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/catalog/search?q={query}&orderby=price&order=ASC&per_page=20&fields=summary",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/catalog/product/{id}",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/kalicart/v1/checkout/quote",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C4-S-1",
+  "task": "C4",
+  "arm": "S",
+  "stores": [
+   "store-a",
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 14,
+  "calls_failed": 1,
+  "tokens_in": 422364,
+  "tokens_out": 11702,
+  "turns": 9,
+  "seconds": 82,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=20",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=20",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=10&_fields=id%2Cname%2Ctype%2Cprices%2Cattributes%2Cvariations",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=30&_fields=id%2Cname%2Ctype%2Cprices%2Cattributes%2Cvariations",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=40&_fields=id%2Cname%2Ctype%2Cprices%2Cattributes%2Cvariations%2Cis_in_stock",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=40&orderby=price&order=asc&_fields=id%2Cname%2Ctype%2Cprices%2Cvariations",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart-add-item",
+    "status": 404
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1",
+    "status": 200
+   },
+   {
+    "turn": 6,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 6,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 7,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   },
+   {
+    "turn": 7,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C4-S-2",
+  "task": "C4",
+  "arm": "S",
+  "stores": [
+   "store-a",
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 29,
+  "calls_failed": 1,
+  "tokens_in": 885132,
+  "tokens_out": 14389,
+  "turns": 16,
+  "seconds": 116,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=20",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=20",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products/attributes",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products/attributes/{id}/terms",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products/attributes/{id}/terms",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?attributes%5B0%5D%5Battribute%5D=pa_36&attributes%5B0%5D%5Bterm%5D=3&per_page=1",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products/attributes/pa_36/terms",
+    "status": 404
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=5&_fields=id%2Cname",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products/attributes/9/terms",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&attributes%5B0%5D%5Battribute%5D=pa_taglia&attributes%5B0%5D%5Bterm_id%5D={id}&_fields=id%2Cname%2Ctype&per_page=50",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 6,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&attributes%5B0%5D%5Battribute%5D=pa_taglia&attributes%5B0%5D%5Bterm_id%5D={id}&_fields=id%2Cname%2Cprices&per_page=50",
+    "status": 200
+   },
+   {
+    "turn": 6,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   },
+   {
+    "turn": 7,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&orderby=price&order=asc&_fields=id%2Cname%2Cprices%2Cis_in_stock&per_page=20",
+    "status": 200
+   },
+   {
+    "turn": 7,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&attributes%5B0%5D%5Battribute%5D=pa_taglia&attributes%5B0%5D%5Bterm_id%5D={id}&orderby=price&order=asc&_fields=id%2Cname%2Cprices&per_page=44",
+    "status": 200
+   },
+   {
+    "turn": 8,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cvariations%2Cprices",
+    "status": 200
+   },
+   {
+    "turn": 8,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cprices%2Cis_in_stock%2Cadd_to_cart",
+    "status": 200
+   },
+   {
+    "turn": 9,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cvariations%2Cprices%2Cis_in_stock",
+    "status": 200
+   },
+   {
+    "turn": 9,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cvariations%2Cprices%2Cis_in_stock",
+    "status": 200
+   },
+   {
+    "turn": 9,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cvariations%2Cprices%2Cis_in_stock",
+    "status": 200
+   },
+   {
+    "turn": 9,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cvariations%2Cprices%2Cis_in_stock",
+    "status": 200
+   },
+   {
+    "turn": 10,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 10,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/remove-item",
+    "status": 200
+   },
+   {
+    "turn": 11,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 11,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 12,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   },
+   {
+    "turn": 13,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/remove-item",
+    "status": 200
+   },
+   {
+    "turn": 14,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   }
+  ]
+ },
+ {
+  "run": "C4-S-3",
+  "task": "C4",
+  "arm": "S",
+  "stores": [
+   "store-a",
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 23,
+  "calls_failed": 2,
+  "tokens_in": 1157771,
+  "tokens_out": 13675,
+  "turns": 14,
+  "seconds": 104,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=20",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=20",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=50",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products/attributes",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=50",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products/attributes/{id}/terms",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=50",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?category={category}&per_page={id}&orderby=price&order=asc",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 401
+   },
+   {
+    "turn": 4,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 401
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 6,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   },
+   {
+    "turn": 6,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   },
+   {
+    "turn": 7,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&stock_status=instock&min_price=1&orderby=price&order=asc&per_page=3",
+    "status": 200
+   },
+   {
+    "turn": 7,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?category={category}&stock_status=instock&min_price=1&orderby=price&order=asc&per_page=3",
+    "status": 200
+   },
+   {
+    "turn": 8,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&stock_status=instock&min_price=1&orderby=price&order=asc&per_page=2",
+    "status": 200
+   },
+   {
+    "turn": 8,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?category={category}&search={query}&orderby=price&order=asc&per_page=2",
+    "status": 200
+   },
+   {
+    "turn": 9,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}",
+    "status": 200
+   },
+   {
+    "turn": 9,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?category={category}&search={query}&stock_status=instock&min_price=1&orderby=price&order=asc&per_page=2",
+    "status": 200
+   },
+   {
+    "turn": 10,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/remove-item",
+    "status": 200
+   },
+   {
+    "turn": 11,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 12,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C4-S-4",
+  "task": "C4",
+  "arm": "S",
+  "stores": [
+   "store-a",
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 25,
+  "calls_failed": 0,
+  "tokens_in": 641501,
+  "tokens_out": 12496,
+  "turns": 12,
+  "seconds": 101,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=20",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=20",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=1",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=1",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=1",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=1&page=2",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=1&page=3",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=1&page=4",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&orderby=price&order=asc&per_page=1",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&orderby=price&order=asc&per_page=20&_fields=id%2Cname%2Cprices",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?category={category}&orderby=price&order=asc&per_page=20&_fields=id%2Cname%2Cprices",
+    "status": 200
+   },
+   {
+    "turn": 6,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cprices%2Cvariations%2Cis_purchasable%2Cis_in_stock",
+    "status": 200
+   },
+   {
+    "turn": 6,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cprices%2Cvariations%2Cis_purchasable%2Cis_in_stock",
+    "status": 200
+   },
+   {
+    "turn": 6,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cprices%2Cis_purchasable%2Cis_in_stock%2Cvariations",
+    "status": 200
+   },
+   {
+    "turn": 6,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cprices%2Cis_purchasable%2Cis_in_stock%2Cvariations",
+    "status": 200
+   },
+   {
+    "turn": 7,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?category={category}&orderby=price&order=asc&per_page=20&_fields=id%2Cname%2Cprices",
+    "status": 200
+   },
+   {
+    "turn": 7,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products/{id}?_fields=id%2Cname%2Ctype%2Cprices%2Cvariations%2Cis_purchasable%2Cis_in_stock",
+    "status": 200
+   },
+   {
+    "turn": 7,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 8,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   },
+   {
+    "turn": 8,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 9,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   },
+   {
+    "turn": 10,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   },
+   {
+    "turn": 10,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart",
+    "status": 200
+   }
+  ]
+ },
+ {
+  "run": "C4-S-5",
+  "task": "C4",
+  "arm": "S",
+  "stores": [
+   "store-a",
+   "store-b"
+  ],
+  "outcome": "verified",
+  "detail": "",
+  "calls_total": 16,
+  "calls_failed": 2,
+  "tokens_in": 889659,
+  "tokens_out": 9633,
+  "turns": 12,
+  "seconds": 73,
+  "stop": "final",
+  "calls": [
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=20",
+    "status": 200
+   },
+   {
+    "turn": 0,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=20",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=20&orderby=price&order=asc",
+    "status": 200
+   },
+   {
+    "turn": 1,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?category={category}&search={query}&per_page=20&orderby=price&order=asc",
+    "status": 200
+   },
+   {
+    "turn": 2,
+    "method": "GET",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/products?category={category}&search={query}&per_page=3&orderby=price&order=asc&page=1",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?search={query}&per_page=3&orderby=price&order=asc",
+    "status": 200
+   },
+   {
+    "turn": 3,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 401
+   },
+   {
+    "turn": 4,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 4,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&per_page=2&orderby=price&order=asc",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-a",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   },
+   {
+    "turn": 5,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 401
+   },
+   {
+    "turn": 6,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   },
+   {
+    "turn": 7,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/update-customer",
+    "status": 200
+   },
+   {
+    "turn": 8,
+    "method": "GET",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/products?category={category}&per_page=2&orderby=price&order=asc&page=2",
+    "status": 200
+   },
+   {
+    "turn": 9,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/remove-item",
+    "status": 200
+   },
+   {
+    "turn": 10,
+    "method": "POST",
+    "store": "store-b",
+    "path": "/wp-json/wc/store/v1/cart/add-item",
+    "status": 201
+   }
+  ]
+ }
+]

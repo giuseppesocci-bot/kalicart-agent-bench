@@ -1,0 +1,5 @@
+harness/runs/
+harness/tasks.json
+harness/results.csv
+*.env
+__pycache__/

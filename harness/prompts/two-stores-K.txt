@@ -1,0 +1,8 @@
+Trova {COMPITO}. Budget {BUDGET}. Calcola il totale consegnato di ciascun ordine a {DESTINAZIONE} e la somma dei due.
+Usa SOLO i cataloghi KaliCart dei due negozi: parti da https://{NEGOZIO_A}/wp-json/kalicart/v1/discovery e da https://{NEGOZIO_B}/wp-json/kalicart/v1/discovery. Non usare altre API. Non creare ordini.
+Non riusare risultati di prove precedenti.
+Alla fine riporta: chiamate fatte (metodo e URL), quali errori ti hanno costretto a chiamate in più, il totale di ciascun ordine con spedizione e la somma.
+Chiudi il report con questo blocco JSON compilato, esattamente con queste chiavi (ogni articolo con il suo negozio; reported_total è la somma dei due ordini):
+```json
+{"bench_result": {"store": "{NEGOZIO}", "arm": "K", "items": [{"store": "", "product_id": 0, "variation_id": null, "quantity": 1}], "destination": {"country": "IT", "state": "", "postcode": "", "city": ""}, "reported_total": 0.00, "total_source": "api_response oppure computed", "calls_total": 0, "calls_failed": 0}}
+```

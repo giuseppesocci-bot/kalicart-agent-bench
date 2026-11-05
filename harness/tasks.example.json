@@ -1,0 +1,78 @@
+{
+ "C1": {
+  "template": "single-store",
+  "store": "your-store.example",
+  "task": "quattro guanciali dello stesso modello (quantità 4) e un materasso matrimoniale in misura 160x190 cm",
+  "budget": 650,
+  "budget_text": "650 €",
+  "destination": {
+   "country": "IT",
+   "state": "MI",
+   "postcode": "20121",
+   "city": "Milano"
+  },
+  "destination_text": "Milano (CAP 20121, provincia MI, Italia)",
+  "checks": {
+   "min_lines": 2,
+   "qty_line": {
+    "qty": 4,
+    "attr": {},
+    "name": [
+     "guancial"
+    ]
+   },
+   "line_named_attr": {
+    "name": [
+     "materass"
+    ],
+    "attr": {
+     "pa_dimensioni": "160x190"
+    }
+   }
+  }
+ },
+ "C4": {
+  "template": "two-stores",
+  "stores": [
+   "store-a.example",
+   "store-b.example"
+  ],
+  "store": "store-a.example+store-b.example",
+  "task": "su store-a.example uno slip donna nero in taglia 3 e su store-b.example un guanciale; sono due ordini separati, uno per negozio",
+  "budget": 120,
+  "budget_text": "120 € in tutto (somma dei due ordini, spedizioni comprese)",
+  "destinations": {
+   "store-a.example": {
+    "country": "IT",
+    "state": "MI",
+    "postcode": "20121",
+    "city": "Milano"
+   },
+   "store-b.example": {
+    "country": "IT",
+    "state": "MI",
+    "postcode": "20121",
+    "city": "Milano"
+   }
+  },
+  "destination_text": "Milano (CAP 20121, provincia MI, Italia)",
+  "checks": {
+   "per_store_named": {
+    "store-a.example": [
+     "slip"
+    ],
+    "store-b.example": [
+     "guancial"
+    ]
+   },
+   "line_named_attr": {
+    "name": [
+     "slip"
+    ],
+    "attr": {
+     "pa_taglia": "3"
+    }
+   }
+  }
+ }
+}
