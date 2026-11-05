@@ -3,7 +3,7 @@
 What does it cost a shopping agent to reach a delivered total that the store itself confirms?
 
 This repository holds the harness, the pre-registered protocols and the anonymized run data behind
-[the write-up on dev.to](LINK-TO-POST). It compares two paths on the same WooCommerce stores, with the same agent and the same task:
+[the write-up](https://bridge.kalicart.com/blog/same-total-fewer-tokens-agent-benchmark/). It compares two paths on the same WooCommerce stores, with the same agent and the same task:
 
 - **K**: [KaliCart Bridge](https://wordpress.org/plugins/kalicart-bridge/), a free WooCommerce plugin with an agent-oriented catalog and a read-only delivered-total quote.
 - **S**: the public WooCommerce Store API (`/wp-json/wc/store/v1/`), no credentials.
